@@ -1,0 +1,12 @@
+from tkinter import *
+
+root = Tk()
+
+texto = Text(root)
+texto.pack()
+texto.config( width = 30, height = 10, font = ("FreeMono", 14), padx = 15, pady = 15)
+#texto.config( selectbackground = "red") #permite cambiar el color de la seleccion del texto
+
+
+
+root.mainloop()
