@@ -45,33 +45,11 @@ frame.pack()
 #frame.config(bg=_from_rgb((240, 240, 240)))
 frame.config(bg="lightblue")
 
-#etiquetas
-#   label = Label(frame, text = "hola mundo")
-#   label.place(x = 0, y = 0)
-
-#crear label de forma sencilla 
-#   Label(root, text = "equiqueta uno").pack()
-#   Label(root, text = "equiqueta dos").pack()
-#   Label(root, text = "equiqueta tres").pack()
-
-
-Label(frame, text = "equiqueta uno").pack()
-Label(frame, text = "equiqueta dos").pack()
-Label(frame, text = "equiqueta tres").pack()
-
-
-
-
 #cambiar el color del fondo 
 root.config(bg=_from_rgb((240, 240, 240)))
 
 #Loop principal
 root.mainloop()
-
-
-
-
-
 
 #bottom of all code
 root.mainloop()
