@@ -36,7 +36,7 @@ def yes_no_cancel():
         root.destroy()
 
 def retry_cancel():
-    resultado = Messagebox.askretrycancel("titulo de  la ventana ","contenido de la ventana ")
+    Messagebox.askretrycancel("titulo de  la ventana ","contenido de la ventana ")
 
 Button(root, text = "info", command = test).pack()
 Button(root, text = "Alerta", command = test2).pack()

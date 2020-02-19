@@ -27,4 +27,8 @@ root = Tk()
 imagen = PhotoImage(file = "imagen.gif")
 Label(root, image = imagen, bd = 0).pack(side = "left")
 
+variable_texto = StringVar()
+variable_texto.set("hola")
+Label(root, textvar = variable_texto).pack()
+
 root.mainloop()
