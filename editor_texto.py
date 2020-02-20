@@ -30,16 +30,25 @@ def guardar():
     global ruta 
     mensaje.set("Guardar")
     if ruta != "":
-        contenido = texto.get(1.0,"end")
+        contenido = texto.get(1.0,"end-1c")
         archivo =  open(ruta, "w+")
         archivo.write(contenido)
         archivo.close()
         mensaje.set("Archivo guardado")
+    else: 
+        guardar_como()
 
 def guardar_como():
     global ruta 
     mensaje.set("Guardar como") 
-
+    archivo = Filedialog.asksaveasfile(initialdir = "~/Escritorio", title = "Guardad como", mode = "w", defaultextension = ".txt")
+    if archivo is not None:
+        ruta = archivo.name
+        print(ruta)
+        contenido = texto.get(1.0, "end-1c")
+        archivo.write(contenido)
+        archivo.close()
+        mensaje.set("Archivo guardado")
 
 root = Tk()
 root.title("Duesk text editor")
